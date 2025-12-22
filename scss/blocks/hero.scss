@@ -1,0 +1,31 @@
+.hero {
+  padding: 35px 0;
+  .heroWrapper {
+    display: flex;
+    justify-content: space-between;
+    .heroAbout {
+      width: 40%;
+      .heroTitle {
+        width: 100%;
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 140%;
+        margin: 0 0 35px 0;
+      }
+      .heroSubtitle {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        width: 100%;
+        margin-bottom: 35px;
+      }
+      a {
+        padding: 20px 35px;
+      }
+    }
+    .heroImage {
+      width: 600px;
+      height: 515px;
+    }
+  }
+}

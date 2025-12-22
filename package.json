@@ -17,6 +17,7 @@
     "webpack-dev-server": "^5.2.2"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^13.0.1",
     "normalize.css": "^8.0.1"
   }
 }
