@@ -2,3 +2,15 @@
 @use "normalize";
 @use "scaffolding";
 @use "animations" as *;
+
+@use "blocks/callToAction.scss";
+@use "blocks/case.scss";
+@use "blocks/contact.scss";
+@use "blocks/footer.scss";
+@use "blocks/header.scss";
+@use "blocks/hero.scss";
+@use "blocks/partners.scss";
+@use "blocks/plan.scss";
+@use "blocks/services.scss";
+@use "blocks/team.scss";
+@use "blocks/testimonials.scss";
