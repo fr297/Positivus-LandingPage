@@ -1,0 +1,16 @@
+.partners {
+  padding: 35px 0 70px 0;
+  .partnersWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .partnersItem {
+      fill: black;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      &:hover {
+        transform: scale(0.8);
+      }
+    }
+  }
+}
