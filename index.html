@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Digital marketing agency helping businesses grow with SEO, PPC, social media and content marketing."
+    />
+
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="apple-touch-icon" href="/favicon.ico" />
     <title>Positivus - Navigating the digital landscape for success</title>
@@ -12,37 +17,39 @@
       <div class="container">
         <div class="headerWrapper">
           <a class="logo" href="/">
-            <svg width="36" height="36">
-              <use xlink:href="img/sprite.svg#logo"></use>
+            <svg width="36" height="36" aria-hidden="true">
+              <use href="img/sprite.svg#logo"></use>
             </svg>
             Positivus
           </a>
-          <nav class="navigation">
+          <nav class="navigation" aria-label="Main navigation">
             <ul class="navList">
               <li class="link-underline">
-                <a href="#hero"><span>About us</span></a>
+                <a href="#hero" aria-current="page"><span>About us</span></a>
               </li>
               <li class="link-underline">
-                <a href="#services"><span>Services</span></a>
+                <a href="#services" aria-current="page"
+                  ><span>Services</span></a
+                >
               </li>
               <li class="link-underline">
-                <a href="#case"><span>Use cases</span></a>
+                <a href="#case" aria-current="page"><span>Use cases</span></a>
               </li>
               <li class="link-underline">
-                <a href="#plan"><span>Pricing</span></a>
+                <a href="#plan" aria-current="page"><span>Pricing</span></a>
               </li>
               <li class="link-underline">
-                <a href="#team"><span>Blog</span></a>
+                <a href="#team" aria-current="page"><span>Blog</span></a>
               </li>
             </ul>
-            <a class="primaryBtn headerCtaBtn" href="#contact"
+            <a class="primaryBtn headerCtaBtn" href="#contact" role="button"
               ><span>Request a quote</span></a
             >
           </nav>
         </div>
       </div>
     </header>
-    <main>
+    <main role="main">
       <section class="hero" id="hero">
         <div class="container">
           <div class="heroWrapper">
@@ -55,7 +62,7 @@
                 online through a range of services including SEO, PPC, social
                 media marketing, and content creation.
               </p>
-              <a class="primaryBtn" href="#"
+              <a class="primaryBtn" href="#" role="button"
                 ><span>Book a consultation</span></a
               >
             </div>
@@ -63,7 +70,66 @@
           </div>
         </div>
       </section>
-      <section class="partners" id="partners"></section>
+      <section class="partners" id="partners">
+        <div class="container">
+          <div class="partnersWrapper">
+            <svg
+              width="125"
+              height="48"
+              class="partnersItem"
+              role="img"
+              aria-label="Amazon logo"
+            >
+              <use href="img/sprite.svg#amazon"></use>
+            </svg>
+            <svg
+              width="127"
+              height="48"
+              class="partnersItem"
+              role="img"
+              aria-label="Dribble logo"
+            >
+              <use href="img/sprite.svg#dribble"></use>
+            </svg>
+            <svg
+              width="129"
+              height="48"
+              class="partnersItem"
+              role="img"
+              aria-label="Hubspot logo"
+            >
+              <use href="img/sprite.svg#hubspot"></use>
+            </svg>
+            <svg
+              width="146"
+              height="48"
+              class="partnersItem"
+              role="img"
+              aria-label="Notion logo"
+            >
+              <use href="img/sprite.svg#notion"></use>
+            </svg>
+            <svg
+              width="126"
+              height="48"
+              class="partnersItem"
+              role="img"
+              aria-label="Netflix logo"
+            >
+              <use href="img/sprite.svg#netflix"></use>
+            </svg>
+            <svg
+              width="111"
+              height="48"
+              class="partnersItem"
+              role="img"
+              aria-label="Zoom logo"
+            >
+              <use href="img/sprite.svg#zoom"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
       <section class="services" id="services"></section>
       <section class="callToAction" id="callToAction"></section>
       <section class="case" id="case"></section>
