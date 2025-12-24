@@ -44,10 +44,38 @@
         padding: 7px;
         margin-bottom: 93px;
       }
+      a {
+        font-size: 20px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        svg {
+          transition: all 0.4s ease;
+        }
+        &:hover {
+          svg {
+            transform: scale(1.2);
+          }
+        }
+        &:active {
+          svg {
+            transform: scale(0.8);
+          }
+        }
+      }
       &:nth-child(1) {
         background-color: #f3f3f3;
         h3 {
           background-color: #b9ff66;
+        }
+        a {
+          color: #191a23;
+          span {
+            &::after {
+              background-color: #191a23;
+            }
+          }
         }
       }
       &:nth-child(2) {
@@ -55,11 +83,27 @@
         h3 {
           background-color: #fff;
         }
+        a {
+          color: #191a23;
+          span {
+            &::after {
+              background-color: #191a23;
+            }
+          }
+        }
       }
       &:nth-child(3) {
         background-color: #191a23;
         h3 {
           background-color: #fff;
+        }
+        a {
+          color: #fff;
+          span {
+            &::after {
+              background-color: #fff;
+            }
+          }
         }
       }
       &:nth-child(4) {
@@ -67,17 +111,41 @@
         h3 {
           background-color: #b9ff66;
         }
+        a {
+          color: #191a23;
+          span {
+            &::after {
+              background-color: #191a23;
+            }
+          }
+        }
       }
       &:nth-child(5) {
         background-color: #b9ff66;
         h3 {
           background-color: #f3f3f3;
         }
+        a {
+          color: #191a23;
+          span {
+            &::after {
+              background-color: #191a23;
+            }
+          }
+        }
       }
       &:nth-child(6) {
         background-color: #191a23;
         h3 {
           background-color: #b9ff66;
+        }
+        a {
+          color: #fff;
+          span {
+            &::after {
+              background-color: #fff;
+            }
+          }
         }
       }
       &:hover {
