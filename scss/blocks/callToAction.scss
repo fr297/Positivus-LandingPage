@@ -1,0 +1,34 @@
+.callToAction {
+  padding: 73px 0 70px 0;
+  .ctaWrapper {
+    width: 100%;
+    padding: 23px 0;
+    div {
+      position: relative;
+      width: 100%;
+      padding: 60px 135px 120px 60px;
+      background-color: #f3f3f3;
+      border-radius: 45px;
+    }
+    .ctaImg {
+      position: absolute;
+      right: 135px;
+      top: -20px;
+    }
+    .ctaTitle {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 26px;
+    }
+    .ctaSubtitle {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 26px;
+      line-height: 22px;
+      width: 45%;
+    }
+    .ctaBtn {
+      padding: 20px 35px;
+    }
+  }
+}
