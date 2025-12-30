@@ -147,3 +147,24 @@ body {
     }
   }
 }
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+  width: 100%;
+  margin-bottom: 80px;
+  .mainTitle {
+    font-size: 40px;
+    font-weight: 500;
+    background-color: #b9ff66;
+    border-radius: 7px;
+    padding: 7px;
+  }
+  .mainSubtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 50%;
+  }
+}
