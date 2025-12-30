@@ -1,26 +1,6 @@
 .services {
   padding: 70px 0 50px 0;
-  .serviceAbout {
-    display: flex;
-    align-items: center;
-    gap: 47px;
-    width: 70%;
-    padding-bottom: 40px;
-    .servicesTitle {
-      font-size: 40px;
-      font-weight: 500;
-      background-color: #b9ff66;
-      border-radius: 7px;
-      padding: 7px;
-    }
-    .servicesSubtitle {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 28px;
-    }
-  }
   .servicesList {
-    padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

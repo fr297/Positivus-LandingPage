@@ -1,0 +1,57 @@
+.case {
+  padding: 70px 0;
+  .caseList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 45px;
+    padding: 35px 30px 50px 30px;
+    background-color: #191a23;
+    gap: 128px;
+    .caseItem {
+      padding: 35px 30px 40px 30px;
+      width: 33%;
+      border-radius: 45px;
+      background-color: #191a23;
+      position: relative;
+      transition: all 0.6s ease;
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        line-height: 140%;
+        margin-bottom: 20px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 186px;
+        background-color: white;
+        right: -64px;
+        top: 35px;
+      }
+      a {
+        display: flex;
+        gap: 15px;
+        color: #b9ff66;
+        font-size: 20px;
+        font-weight: 400;
+        span {
+          &::after {
+            background-color: #b9ff66;
+          }
+        }
+        svg {
+          transition: all 0.5s ease;
+        }
+      }
+      &:hover {
+        svg {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}
