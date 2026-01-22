@@ -77,10 +77,6 @@
           border: 2px solid #191a23;
           outline: none;
         }
-        &:hover {
-          border: 2px solid #191a23;
-          transform: scale(1.05);
-        }
       }
       .message {
         height: 190px;
@@ -90,10 +86,6 @@
         &:focus {
           outline: none;
           border: 2px solid #191a23;
-        }
-        &:hover {
-          border: 2px solid #191a23;
-          transform: scale(1.05);
         }
       }
       .submitBtn {
