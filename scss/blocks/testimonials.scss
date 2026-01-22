@@ -1,0 +1,104 @@
+.testimonials {
+  .splide {
+    position: relative;
+    padding: 84px 0 68px 0;
+    border-radius: 45px;
+    background-color: #191a23;
+    .splide__list {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      .splide__slide {
+        .slider-wrapper {
+          position: relative;
+          border-radius: 45px;
+          border: 1px solid #b9ff66;
+          padding: 48px 52px;
+          margin: 0 0 55px;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 64px;
+            height: 38px;
+            background-color: #b9ff66;
+            bottom: -39px;
+            left: 51px;
+            clip-path: polygon(100% 0, 0 0, 49% 83%);
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 62px;
+            height: 38px;
+            background-color: #191a23;
+            bottom: -37px;
+            left: 52px;
+            clip-path: polygon(100% 0, 0 0, 49% 83%);
+          }
+          p {
+            color: white;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 140%;
+          }
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: 500;
+          padding: 0 0 0 80px;
+          margin: 0 0 4px 0;
+          color: #b9ff66;
+        }
+        .profession {
+          font-size: 18px;
+          font-weight: 400;
+          color: white;
+          padding: 0 0 0 80px;
+        }
+      }
+    }
+  }
+  .arrowWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .splide__arrows {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 124px 0 0 0;
+      gap: 189px;
+
+      .splide__arrow {
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .splide__pagination {
+    position: absolute;
+    bottom: 68px;
+    left: 44%;
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+    .splide__pagination__page {
+      width: 14px;
+      height: 14px;
+      border: none;
+      border-radius: 50%;
+      background: white;
+      box-shadow: none;
+      opacity: 1;
+      transform: none;
+      cursor: pointer;
+      padding: 0;
+    }
+    .splide__pagination__page.is-active {
+      background: #b9ff66;
+      transform: none;
+    }
+  }
+}

@@ -35,6 +35,19 @@ module.exports = {
           filename: "fonts/[hash][ext]",
         },
       },
+      {
+        test: /\.css$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              implementation: require("sass"),
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
