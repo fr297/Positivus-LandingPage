@@ -1,16 +1,49 @@
 .partners {
   padding: 35px 0 70px 0;
+  overflow: hidden;
   .partnersWrapper {
     display: flex;
-    justify-content: space-between;
+    overflow: hidden;
     align-items: center;
+    gap: 96px;
+    width: max-content;
+    animation: partners-scroll 35s linear infinite;
+    list-style-type: none;
     .partnersItem {
-      fill: black;
+      flex: 0 0 auto;
       cursor: pointer;
       transition: all 0.4s ease;
       &:hover {
         transform: scale(0.8);
       }
+    }
+  }
+}
+
+@media (max-width: 1435px) {
+  .partners {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .partners {
+    .partnersWrapper {
+      gap: 70px;
+    }
+  }
+}
+
+@media (max-width: 775px) {
+  .partners {
+    padding: 25px 0 70px 0;
+  }
+}
+
+@media (max-width: 570px) {
+  .partners {
+    .partnersWrapper {
+      gap: 50px;
     }
   }
 }
