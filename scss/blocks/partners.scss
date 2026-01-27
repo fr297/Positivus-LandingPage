@@ -7,7 +7,6 @@
     align-items: center;
     gap: 96px;
     width: max-content;
-    animation: partners-scroll 35s linear infinite;
     list-style-type: none;
     .partnersItem {
       flex: 0 0 auto;
@@ -17,6 +16,9 @@
         transform: scale(0.8);
       }
     }
+  }
+  .mobile__only {
+    display: none;
   }
 }
 
@@ -42,8 +44,15 @@
 
 @media (max-width: 570px) {
   .partners {
+    padding: 35px 0;
     .partnersWrapper {
-      gap: 50px;
+      gap: 55px;
+    }
+    .only__desktop {
+      display: none;
+    }
+    .mobile__only {
+      display: flex;
     }
   }
 }
