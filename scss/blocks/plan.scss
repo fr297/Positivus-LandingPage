@@ -42,6 +42,7 @@
           gap: 25px;
           span {
             font-size: 30px;
+            text-align: left;
           }
         }
         .icon {
@@ -79,7 +80,9 @@
         max-height: 0;
         padding: 0 90px 0 60px;
         opacity: 0;
-        transition: max-height 0.6s ease, opacity 0.5s ease;
+        transition:
+          max-height 0.6s ease,
+          opacity 0.5s ease;
         p {
           font-size: 18px;
           font-weight: 400;
@@ -109,6 +112,167 @@
         padding: 30px 60px 0 60px;
         max-height: 300px;
         opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .plan {
+    .about {
+      .planSubtitle {
+        width: 35%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .plan {
+    .accordion {
+      .accordion-item {
+        &:hover {
+          transform: none;
+        }
+        .accordion-button {
+          .item-title {
+            font-size: 50px;
+            span {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .plan {
+    .about {
+      .planSubtitle {
+        width: 100%;
+      }
+    }
+    .accordion {
+      .accordion-item {
+        .accordion-button {
+          padding: 41px 30px 11px 30px;
+          .icon {
+            right: 30px;
+          }
+        }
+        .accordion-content {
+          padding: 30px 30px 0 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .plan {
+    .accordion {
+      .accordion-item {
+        .accordion-button {
+          .item-title {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .plan {
+    padding: 0 0 35px 0;
+    .about {
+      .mainTitle {
+        text-align: center;
+        font-size: 32px;
+      }
+    }
+    .accordion {
+      .accordion-item {
+        .accordion-button {
+          padding: 31px 30px 1px 30px;
+          .icon {
+            width: 48px;
+            height: 48px;
+            &:before {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 4px;
+              background-color: #191a23;
+              top: 22px;
+              right: 13px;
+              transition: all 0.7s ease;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              width: 4px;
+              height: 20px;
+              background-color: #191a23;
+              top: 14px;
+              right: 21px;
+              transition: all 0.7s ease;
+            }
+          }
+          .item-title {
+            font-size: 45px;
+            span {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .plan {
+    .accordion {
+      .accordion-item {
+        .accordion-content {
+          transition:
+            max-height 0.4s ease,
+            opacity 0.2s ease;
+        }
+        .accordion-button {
+          .item-title {
+            gap: 15px;
+            span {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .accordion-item-active {
+        .accordion-content {
+          max-height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .plan {
+    .accordion {
+      .accordion-item {
+        .accordion-button {
+          .item-title {
+            font-size: 32px;
+            gap: 10px;
+            span {
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
   }
