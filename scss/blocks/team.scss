@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     gap: 40px;
     list-style-type: none;
+    justify-content: center;
     .teamItem {
       width: 31%;
       border-radius: 45px;
@@ -88,6 +89,81 @@
         background-color: #191a23;
         color: #191a23;
         transform: scale(0.95);
+      }
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .team {
+    .teamList {
+      .teamItem {
+        width: 48%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1155px) {
+  .team {
+    .teamList {
+      .teamItem {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (hover: none) {
+  .team {
+    .teamList {
+      .teamItem {
+        &:hover {
+          .teamItemWrapper {
+            background-color: initial;
+            .person {
+              color: initial;
+              border-bottom: initial;
+              .linkedin {
+                border: initial;
+              }
+            }
+            .personInfo {
+              color: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .team {
+    .teamList {
+      .teamItem {
+        width: 75%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .team {
+    .teamBtnWrapper {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .team {
+    .teamList {
+      .teamItem {
+        width: 100%;
+        .teamItemWrapper {
+          padding: 30px 20px;
+        }
       }
     }
   }
