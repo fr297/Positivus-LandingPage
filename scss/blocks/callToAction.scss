@@ -32,3 +32,59 @@
     }
   }
 }
+
+@media (max-width: 1140px) {
+  .callToAction {
+    .ctaWrapper {
+      .ctaImg {
+        right: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .callToAction {
+    padding: 35px 0 70px 0;
+    .ctaWrapper {
+      padding: 0;
+      div {
+        padding: 60px 60px 120px 60px;
+      }
+      .ctaImg {
+        display: none;
+      }
+      .ctaSubtitle {
+        width: 100%;
+      }
+      .ctaBtn {
+        padding: 20px 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .callToAction {
+    .ctaWrapper {
+      div {
+        padding: 50px 50px 110px 50px;
+      }
+      .ctaBtn {
+        padding: 20px 10px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .callToAction {
+    .ctaWrapper {
+      .ctaBtn {
+        padding: 15px 10px;
+        font-size: 15px;
+      }
+    }
+  }
+}
