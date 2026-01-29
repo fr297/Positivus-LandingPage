@@ -14,9 +14,6 @@
     }
     .footerNavigation {
       display: flex;
-      .logo {
-        color: white;
-      }
       .navList {
         li {
           a {
@@ -120,6 +117,124 @@
         color: white;
         text-decoration: none;
         border-bottom: 1px solid white;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .footer {
+    .footerWrapper {
+      .footerForm {
+        .footerInput {
+          padding: 20px 30px;
+        }
+        .footerFormBtn {
+          padding: 20px 30px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .footer {
+    .footerWrapper {
+      .footerNavWrapper {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        .footerNavigation {
+          .navList {
+            flex-direction: column;
+          }
+        }
+      }
+      .footerContact {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .adress {
+          .footerContactTitle {
+            text-align: center;
+            width: 100%;
+          }
+          .footerInfo {
+            text-align: center;
+            margin: 0 0 40px 0;
+          }
+        }
+      }
+      .footerForm {
+        flex-direction: column;
+        padding: 25px;
+        width: 50%;
+      }
+      .copyrightWrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    .footerWrapper {
+      .footerForm {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    .footerWrapper {
+      .footerNavWrapper {
+        gap: 40px;
+        .footerNavigation {
+          .navList {
+            gap: 25px;
+          }
+        }
+      }
+      .footerForm {
+        padding: 15px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    .footerWrapper {
+      padding: 55px 25px 50px 25px;
+      .copyrightWrapper {
+        .copyright {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .footer {
+    .footerWrapper {
+      .footerForm {
+        .footerInput {
+          padding: 15px 20px;
+        }
+        .footerFormBtn {
+          padding: 15px 20px;
+          font-size: 16px;
+        }
       }
     }
   }
