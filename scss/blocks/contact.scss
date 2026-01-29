@@ -128,7 +128,77 @@
 @media (max-width: 1440px) {
   .contact {
     .formWrapper {
-      background-position-x: 190%;
+      background-position-x: 220%;
+    }
+  }
+}
+
+@media (max-width: 1290px) {
+  .contact {
+    .formWrapper {
+      background-position-x: 260%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    .about {
+      .contactTitle {
+        width: max-content;
+      }
+      .contactSubtitle {
+        width: 50%;
+      }
+    }
+    .formWrapper {
+      padding: 60px 100px 80px 100px;
+      background-image: none;
+      #form {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 40px 0 30px 0;
+    .about {
+      .contactSubtitle {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    .formWrapper {
+      padding: 60px 40px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    .formWrapper {
+      padding: 40px 20px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .contact {
+    .formWrapper {
+      #form {
+        .checkbox {
+          gap: 25px;
+          .topic {
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
 }
