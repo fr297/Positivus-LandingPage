@@ -189,11 +189,31 @@ body {
   }
 }
 
+.only__desktop {
+  display: none;
+}
+
+.only__mobile {
+  display: block;
+  max-width: 100%;
+  padding-left: 9px;
+  overflow: visible;
+}
+
 @media (max-width: 1150px) {
   .about {
     .mainSubtitle {
       width: 100%;
     }
+  }
+}
+
+@media (min-width: 1025px) {
+  .only__mobile {
+    display: none !important;
+  }
+  .only__desktop {
+    display: flex !important;
   }
 }
 
