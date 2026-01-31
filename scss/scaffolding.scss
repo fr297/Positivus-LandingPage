@@ -226,6 +226,9 @@ body {
     flex-direction: column;
     gap: 35px;
     margin-bottom: 40px;
+    .mainTitle {
+      font-size: 32px;
+    }
     .mainSubtitle {
       width: 100%;
       text-align: center;

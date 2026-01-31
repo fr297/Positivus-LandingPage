@@ -5,18 +5,21 @@ import "../scss/style.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
   const slider = new Splide("#testSlider", {
-    type: "slide",
+    type: "loop",
     perPage: 1,
+    focus: "center",
     perMove: 1,
-    fixedWidth: "600px", // или нужный px
-    gap: "50px",
-    focus: false, // <- отключаем центрирование
-    loop: false,
     drag: true,
-    dragMinThreshold: { touch: 18, mouse: 10 },
-    flickPower: 0,
-    flickMaxPages: 1,
-    waitForTransition: true,
+    fixedWidth: "50%",
+
+    breakpoints: {
+      1024: {
+        fixedWidth: "70%",
+      },
+      768: {
+        fixedWidth: "100%",
+      },
+    },
   }).mount();
 
   const MOBILE_BREAKPOINT = 1024;

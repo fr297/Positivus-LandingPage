@@ -1,14 +1,16 @@
 .testimonials {
-  .splide {
+  padding: 70px 0;
+  #testSlider {
     position: relative;
     padding: 84px 0 68px 0;
     border-radius: 45px;
     background-color: #191a23;
     .splide__list {
       display: flex;
-      justify-content: center;
       list-style-type: none;
       .splide__slide {
+        padding: 0 25px;
+        width: 50%;
         .slider-wrapper {
           position: relative;
           border-radius: 45px;
@@ -45,7 +47,7 @@
         h3 {
           font-size: 20px;
           font-weight: 500;
-          padding: 0 0 0 80px;
+          padding: 0 0 0 55px;
           margin: 0 0 4px 0;
           color: #b9ff66;
         }
@@ -53,52 +55,120 @@
           font-size: 18px;
           font-weight: 400;
           color: white;
-          padding: 0 0 0 80px;
+          padding: 0 0 0 55px;
+        }
+      }
+    }
+    .arrowWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .splide__arrows {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 124px 0 0 0;
+        gap: 189px;
+
+        .splide__arrow {
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+    .splide__pagination {
+      position: absolute;
+      bottom: 68px;
+      left: 44%;
+      display: flex;
+      justify-content: center;
+      gap: 19px;
+      .splide__pagination__page {
+        width: 14px;
+        height: 14px;
+        border: none;
+        border-radius: 50%;
+        background: white;
+        box-shadow: none;
+        opacity: 1;
+        transform: none;
+        cursor: pointer;
+        padding: 0;
+      }
+      .splide__pagination__page.is-active {
+        background: #b9ff66;
+        transform: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .testimonials {
+    padding: 35px 0;
+    #testSlider {
+      .splide__pagination {
+        left: 42%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    #testSlider {
+      padding: 60px 0 110px 0;
+      .arrowWrapper {
+        display: none;
+      }
+      .splide__pagination {
+        bottom: 45px;
+        right: 20%;
+        left: 20%;
+        .splide__pagination__page {
+          width: 12px;
+          height: 12px;
         }
       }
     }
   }
-  .arrowWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .splide__arrows {
-      width: 60%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 124px 0 0 0;
-      gap: 189px;
+}
 
-      .splide__arrow {
-        background: none;
-        border: none;
-        cursor: pointer;
+@media (max-width: 600px) {
+  .testimonials {
+    #testSlider {
+      .splide__list {
+        .splide__slide {
+          .slider-wrapper {
+            padding: 35px;
+            p {
+              font-size: 16px;
+            }
+          }
+          h3 {
+            font-size: 18px;
+          }
+          .profession {
+            font-size: 16px;
+          }
+        }
       }
     }
   }
-  .splide__pagination {
-    position: absolute;
-    bottom: 68px;
-    left: 44%;
-    display: flex;
-    justify-content: center;
-    gap: 19px;
-    .splide__pagination__page {
-      width: 14px;
-      height: 14px;
-      border: none;
-      border-radius: 50%;
-      background: white;
-      box-shadow: none;
-      opacity: 1;
-      transform: none;
-      cursor: pointer;
-      padding: 0;
-    }
-    .splide__pagination__page.is-active {
-      background: #b9ff66;
-      transform: none;
+}
+
+@media (max-width: 400px) {
+  .testimonials {
+    #testSlider {
+      .splide__list {
+        .splide__slide {
+          .slider-wrapper {
+            padding: 20px 25px;
+          }
+        }
+      }
     }
   }
 }
