@@ -25,15 +25,48 @@ SVG Sprite – icons and logos
 
 ##📁 Project Structure
 
-positivus/
+Positivus-LandingPage/
+├── .gitignore
+├── README.md
+├── package.json
+├── webpack.config.js
+├── favicon.ico
 ├── index.html
-├── css/
+├── scss/
+│   ├── base/
+│   │   ├── _reset.scss
+│   │   ├── _typography.scss
+│   │   └── _utilities.scss
+│   ├── components/
+│   │   ├── _header.scss
+│   │   ├── _footer.scss
+│   │   └── _buttons.scss
+│   ├── layout/
+│   │   ├── _grid.scss
+│   │   └── _responsive.scss
+│   ├── pages/
+│   │   ├── _hero.scss
+│   │   ├── _services.scss
+│   │   └── _contact.scss
+│   └── main.scss
+├── css/                    
 │   └── style.css
 ├── js/
-│   └── main.js
+│   ├── main.js
+│   ├── navigation.js
+│   ├── slider.js
+│   └── accordion.js
 ├── img/
 │   ├── sprite.svg
 │   ├── hero.webp
 │   ├── service1.webp
-│   └── ...
-└── favicon.ico
+│   └── ...                
+├── fonts/
+│   └── Space_Grotesk/     
+├── dist/                
+│   ├── index.html
+│   ├── css/
+│   ├── js/
+│   └── img/
+└── docs/                    
+
