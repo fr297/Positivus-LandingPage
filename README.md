@@ -26,23 +26,17 @@ SVG Sprite – icons and logos
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
-git clone https://github.com/fr297/Positivus-LandingPage.git
-cd Positivus-LandingPage
-
---
+- git clone https://github.com/fr297/Positivus-LandingPage.git
+- cd Positivus-LandingPage
 
 ### 2. Install dependencies 
-npm install
-
---
+- npm install
 
 ### 3. Build for production
-npm run build
-
---
+- npm run build
 
 ### 4. Run development server
-npm run dev
+- npm run dev
 
 ---
 
@@ -54,3 +48,8 @@ Aleksandr – Frontend Developer
 
 - GitHub: https://github.com/fr297
 - LinkedIn: https://www.linkedin.com/in/AleksandrFrolov2809/
+
+---
+
+<img width="1440" height="786" alt="Home section of landing page" src="https://github.com/user-attachments/assets/fb725c7e-4d0e-4d93-b2f1-eed69d113427" />
+
