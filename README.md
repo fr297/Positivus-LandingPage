@@ -17,9 +17,23 @@ This project was built as a pet project to practice semantic HTML, responsive la
 HTML5 – semantic and accessible markup
 SCSS – custom styles, animations, responsive layout
 JavaScript (Vanilla) – interactivity and UI behavior
+WEBPACK - build tools
 Splide.js – sliders for testimonials & mobile case studies
 SVG Sprite – icons and logos
-WEBPACK - 
 
 --
 
+##📁 Project Structure
+
+positivus/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+├── img/
+│   ├── sprite.svg
+│   ├── hero.webp
+│   ├── service1.webp
+│   └── ...
+└── favicon.ico
