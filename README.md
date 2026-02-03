@@ -5,12 +5,12 @@ Positivus is a modern, responsive landing page designed for a digital marketing 
 The project focuses on clean UI, smooth interactions, accessibility, and real-world layout structure commonly used in marketing websites.
 This project was built as a pet project to practice semantic HTML, responsive layouts, UI components, and front-end best practices.
 
---
+---
 
 ##🔗 Live Demo
 👉 https://your-username.github.io/positivus
 
---
+---
 
 ##🛠 Tech Stack
 
@@ -21,52 +21,34 @@ WEBPACK - build tools
 Splide.js – sliders for testimonials & mobile case studies
 SVG Sprite – icons and logos
 
---
+---
 
-##📁 Project Structure
+##🚀 Getting Started
 
-Positivus-LandingPage/
-├── .gitignore
-├── README.md
-├── package.json
-├── webpack.config.js
-├── favicon.ico
-├── index.html
-├── scss/
-│   ├── base/
-│   │   ├── _reset.scss
-│   │   ├── _typography.scss
-│   │   └── _utilities.scss
-│   ├── components/
-│   │   ├── _header.scss
-│   │   ├── _footer.scss
-│   │   └── _buttons.scss
-│   ├── layout/
-│   │   ├── _grid.scss
-│   │   └── _responsive.scss
-│   ├── pages/
-│   │   ├── _hero.scss
-│   │   ├── _services.scss
-│   │   └── _contact.scss
-│   └── main.scss
-├── css/                    
-│   └── style.css
-├── js/
-│   ├── main.js
-│   ├── navigation.js
-│   ├── slider.js
-│   └── accordion.js
-├── img/
-│   ├── sprite.svg
-│   ├── hero.webp
-│   ├── service1.webp
-│   └── ...                
-├── fonts/
-│   └── Space_Grotesk/     
-├── dist/                
-│   ├── index.html
-│   ├── css/
-│   ├── js/
-│   └── img/
-└── docs/                    
+#1. Clone the repository
+git clone https://github.com/fr297/Positivus-LandingPage.git
+cd Positivus-LandingPage
 
+-
+
+#2. Install dependencies
+npm install
+
+-
+
+#3. Build for production
+npm run build
+
+-
+
+#4. Run development server
+npm run dev
+
+---
+
+##🙌 Author
+
+Aleksandr – Frontend Developer
+-
+GitHub: https://github.com/fr297
+LinkedIn: (Add your LinkedIn link)
