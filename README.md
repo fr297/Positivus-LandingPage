@@ -7,12 +7,12 @@ This project was built as a pet project to practice semantic HTML, responsive la
 
 ---
 
-### 🔗 Live Demo
+## 🔗 Live Demo
 👉 https://your-username.github.io/positivus
 
 ---
 
-### 🛠 Tech Stack
+## 🛠 Tech Stack
 
 HTML5 – semantic and accessible markup
 SCSS – custom styles, animations, responsive layout
@@ -23,32 +23,34 @@ SVG Sprite – icons and logos
 
 ---
 
-### 🚀 Getting Started
+## 🚀 Getting Started
 
-#1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/fr297/Positivus-LandingPage.git
 cd Positivus-LandingPage
 
 --
 
-#2. Install dependencies 
+### 2. Install dependencies 
 npm install
 
 --
 
-#3. Build for production
+### 3. Build for production
 npm run build
 
 --
 
-#4. Run development server
+### 4. Run development server
 npm run dev
 
 ---
 
-### 🙌 Author
+## 🙌 Author
 
 Aleksandr – Frontend Developer
+
 --
--GitHub: https://github.com/fr297
--LinkedIn: https://www.linkedin.com/in/AleksandrFrolov2809/
+
+- GitHub: https://github.com/fr297
+- LinkedIn: https://www.linkedin.com/in/AleksandrFrolov2809/
