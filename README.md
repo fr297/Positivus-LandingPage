@@ -1,4 +1,4 @@
-###Positivus Landing
+##Positivus Landing
 
 Positivus – Digital Marketing Agency Landing Page
 Positivus is a modern, responsive landing page designed for a digital marketing agency.
@@ -7,12 +7,12 @@ This project was built as a pet project to practice semantic HTML, responsive la
 
 ---
 
-##🔗 Live Demo
+#🔗 Live Demo
 👉 https://your-username.github.io/positivus
 
 ---
 
-##🛠 Tech Stack
+#🛠 Tech Stack
 
 HTML5 – semantic and accessible markup
 SCSS – custom styles, animations, responsive layout
@@ -23,21 +23,22 @@ SVG Sprite – icons and logos
 
 ---
 
-##🚀 Getting Started
+#🚀 Getting Started
 
 #1. Clone the repository
-
 git clone https://github.com/fr297/Positivus-LandingPage.git
-
 cd Positivus-LandingPage
+
 --
 
-#2. Install dependencies
+#2. Install dependencies 
 npm install
+
 --
 
 #3. Build for production
 npm run build
+
 --
 
 #4. Run development server
