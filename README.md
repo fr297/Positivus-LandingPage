@@ -42,9 +42,7 @@ SVG Sprite – icons and logos
 
 ## 🙌 Author
 
-Aleksandr – Frontend Developer
-
---
+### Aleksandr – Frontend Developer
 
 - GitHub: https://github.com/fr297
 - LinkedIn: https://www.linkedin.com/in/AleksandrFrolov2809/
