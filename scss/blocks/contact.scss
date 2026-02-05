@@ -57,7 +57,8 @@
               opacity: 1;
             }
           }
-          &:hover {
+          &:hover,
+          &:focus {
             transform: scale(1.07);
           }
         }
@@ -103,7 +104,8 @@
         border-radius: 14px;
         transition: all 0.3s ease;
         margin-top: 15px;
-        &:hover {
+        &:hover,
+        &:focus {
           background-color: #b9ff66;
           color: #191a23;
         }
