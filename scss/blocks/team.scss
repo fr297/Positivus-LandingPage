@@ -114,30 +114,6 @@
   }
 }
 
-@media (hover: none) {
-  .team {
-    .teamList {
-      .teamItem {
-        &:hover {
-          .teamItemWrapper {
-            background-color: initial;
-            .person {
-              color: initial;
-              border-bottom: initial;
-              .linkedin {
-                border: initial;
-              }
-            }
-            .personInfo {
-              color: initial;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 950px) {
   .team {
     .teamList {

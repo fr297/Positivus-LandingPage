@@ -64,17 +64,6 @@ body {
   padding: 0 55px;
 }
 
-.no-hover {
-  *:hover {
-    transform: none !important;
-    box-shadow: none !important;
-    filter: none !important;
-    background: initial !important;
-    color: initial !important;
-    opacity: 1 !important;
-  }
-}
-
 .primaryBtn {
   height: 68px;
   background-color: #191a23;
@@ -209,6 +198,11 @@ body {
   max-width: 100%;
   padding-left: 9px;
   overflow: visible;
+}
+
+.no-scroll {
+  height: 100vh;
+  overflow: hidden;
 }
 
 @media (max-width: 1150px) {

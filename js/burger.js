@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   burgerBtn.addEventListener("click", () => {
     burger.classList.toggle("is-active");
-    info.classList.add("slide-bottom");
+    info.classList.toggle("slide-bottom");
+    burgerBtn.classList.toggle("closeBtn");
+    document.body.classList.toggle("no-scroll");
   });
 });
