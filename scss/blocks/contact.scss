@@ -12,6 +12,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: 155%;
+    opacity: 0;
+    transition: all 0.5s ease;
     #form {
       position: relative;
       display: flex;
@@ -115,6 +117,9 @@
           transform: scale(0.95);
         }
       }
+    }
+    &.animated {
+      opacity: 1;
     }
   }
 }

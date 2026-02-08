@@ -12,6 +12,7 @@
       border-radius: 45px;
       background-color: #191a23;
       padding: 0 0 4px 0;
+      opacity: 0;
       .teamItemWrapper {
         border-radius: 45px;
         background-color: white;
@@ -68,6 +69,10 @@
             color: #b9ff66;
           }
         }
+      }
+      &.animated {
+        opacity: 1;
+        animation: wobble-hor-bottom 0.9s ease;
       }
     }
   }

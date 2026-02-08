@@ -19,6 +19,7 @@
       font-size: 30px;
       font-weight: 500;
       margin-bottom: 26px;
+      opacity: 0;
     }
     .ctaSubtitle {
       font-size: 18px;
@@ -26,9 +27,19 @@
       margin-bottom: 26px;
       line-height: 22px;
       width: 45%;
+      opacity: 0;
     }
     .ctaBtn {
       padding: 20px 35px;
+      opacity: 0;
+    }
+  }
+  &.animated {
+    .ctaTitle,
+    .ctaSubtitle,
+    .ctaBtn {
+      animation: scale-up-center 0.6s ease;
+      opacity: 1;
     }
   }
 }
