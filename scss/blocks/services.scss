@@ -14,6 +14,7 @@
       border-radius: 45px;
       transition: all 0.4s ease;
       background-color: #191a23;
+      opacity: 0;
       .servicesItemWrapper {
         width: 100%;
         display: flex;
@@ -168,6 +169,10 @@
       }
       &:hover {
         transform: scale(0.95);
+      }
+      &.animated {
+        animation: swing-in-top-fwd 0.9s ease;
+        opacity: 1;
       }
     }
   }

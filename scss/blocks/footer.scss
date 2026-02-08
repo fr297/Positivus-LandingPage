@@ -1,5 +1,6 @@
 .footer {
   padding: 70px 0 0 0;
+  opacity: 0;
   .footerWrapper {
     background-color: #191a23;
     padding: 55px 60px 50px 60px;
@@ -76,7 +77,8 @@
         &::placeholder {
           color: white;
         }
-        &:hover {
+        &:hover,
+        &:focus {
           transform: scale(1.05);
         }
         &:focus {
@@ -94,7 +96,8 @@
         transition: all 0.3s ease;
         border: none;
         cursor: pointer;
-        &:hover {
+        &:hover,
+        &:focus {
           transform: scale(1.05);
         }
         &:active {
@@ -119,6 +122,10 @@
         border-bottom: 1px solid white;
       }
     }
+  }
+  &.animated {
+    animation: scale-up-center 0.5s ease;
+    opacity: 1;
   }
 }
 
