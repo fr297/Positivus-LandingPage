@@ -3,9 +3,10 @@ header {
   top: 0;
   z-index: 999;
   width: 100%;
+  padding: 60px 0 35px 0;
   background-color: white;
+  transition: all 0.5s ease;
   .headerWrapper {
-    margin: 60px 0 35px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,14 +46,14 @@ header {
     }
   }
   .burger {
-    display: none;
     background-color: white;
+    display: none;
     .burgerWrapper {
       background-color: white;
       display: flex;
       justify-content: space-between;
       width: 100%;
-      padding: 60px;
+      padding: 0 60px;
       z-index: 12;
       .burger-logo {
         font-size: 32px;
@@ -87,18 +88,21 @@ header {
       }
     }
     .burgerInfo {
-      display: none;
       height: 100%;
       position: fixed;
       top: 156px;
+      display: flex;
+      opacity: 0;
+      visibility: hidden;
       flex-direction: column;
       align-items: center;
       gap: 40px;
       padding: 100px 60px 120px 60px;
       width: 100%;
       background-color: #191a23;
-      transition: all 0.5s ease;
+      transition: all 0.3s ease;
       z-index: 11;
+      transform: translateY(-400px);
     }
   }
   .is-active {
@@ -125,7 +129,9 @@ header {
       }
     }
     .burgerInfo {
-      display: flex;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
       .burger-navigation {
         display: flex;
         flex-direction: column;
@@ -155,6 +161,13 @@ header {
           color: #191a23;
         }
       }
+    }
+  }
+  &.headerFixed {
+    padding: 25px 0;
+    box-shadow: 0px -15px 30px black;
+    .burgerInfo {
+      top: 90px;
     }
   }
 }
@@ -197,7 +210,7 @@ header {
   .header {
     .burger {
       .burgerWrapper {
-        padding: 60px 25px;
+        padding: 0 25px;
       }
     }
     .is-active {
