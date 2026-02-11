@@ -4,3 +4,4 @@ import "./slider";
 import "./noHover";
 import "./burger";
 import "./animations";
+import "./header";
