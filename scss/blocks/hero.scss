@@ -32,6 +32,7 @@
 
 @media (max-width: 1130px) {
   .hero {
+    padding: 170px 0 80px 0;
     .heroWrapper {
       .heroImage {
         width: 450px;
@@ -73,13 +74,13 @@
 
 @media (max-width: 775px) {
   .hero {
-    padding: 170px 0 var(--space-3) 0;
+    padding: 170px 0 45px 0;
     .heroWrapper {
       flex-direction: column;
       justify-content: center;
       align-items: center;
       .heroImage {
-        margin: var(--space-3) 0 0 0;
+        margin: 100px 0 0 0;
       }
     }
     .heroAbout {
