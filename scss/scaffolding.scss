@@ -1,4 +1,16 @@
 @use "./mixins" as mixins;
+
+:root {
+  --primary-color: #b9ff66;
+  --secondary-color: #191a23;
+  --third-color: #f3f3f3;
+  --gap: 40px;
+  --border-radius: 45px;
+  --font-size: 18px;
+  --space-1: 14px;
+  --space-2: 20px;
+  --space-3: 30px;
+}
 /* Fonts */
 
 @font-face {
@@ -49,6 +61,7 @@ html {
 body {
   font-family:
     "Space Grotesk", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+  @include mixins.disableTouchStates;
 }
 
 * {
@@ -68,15 +81,15 @@ body {
 
 .primaryBtn {
   height: 68px;
-  background-color: #191a23;
+  background-color: var(--secondary-color);
   color: white;
-  font-size: 20px;
+  font-size: var(--space-2);
   font-weight: 400;
-  border-radius: 14px;
+  border-radius: var(--space-1);
   text-decoration: none;
   position: relative;
   top: 35px;
-  border: 2px solid #191a23;
+  border: 2px solid var(--secondary-color);
   transition: background-color 0.6s ease;
   span {
     position: relative;
@@ -116,7 +129,7 @@ body {
   gap: 12px;
   text-decoration: none;
   align-items: center;
-  font-size: 40px;
+  font-size: var(--gap);
   font-weight: 500;
   &:hover,
   &:focus {
@@ -128,10 +141,10 @@ body {
   display: flex;
   list-style-type: none;
   align-items: center;
-  gap: 40px;
+  gap: var(--gap);
   li {
     cursor: pointer;
-    font-size: 20px;
+    font-size: var(--space-2);
     font-weight: 400;
     a {
       text-decoration: none;
@@ -139,7 +152,7 @@ body {
   }
 }
 
-.link-underline {
+.linkUnderline {
   text-decoration: none;
   position: relative;
   span {
@@ -179,14 +192,14 @@ body {
   margin-bottom: 80px;
   opacity: 0;
   .mainTitle {
-    font-size: 40px;
+    font-size: var(--gap);
     font-weight: 500;
-    background-color: #b9ff66;
+    background-color: var(--primary-color);
     border-radius: 7px;
     padding: 7px;
   }
   .mainSubtitle {
-    font-size: 18px;
+    font-size: var(--font-size);
     font-weight: 400;
     line-height: 28px;
     width: 50%;
@@ -208,7 +221,7 @@ body {
   overflow: visible;
 }
 
-.no-scroll {
+.noScroll {
   height: 100vh;
   overflow: hidden;
 }
@@ -232,13 +245,13 @@ body {
 
 @media (max-width: 900px) {
   .container {
-    padding: 0 30px;
+    padding: 0 var(--space-3);
   }
   .about {
     justify-content: center;
     flex-direction: column;
     gap: 35px;
-    margin-bottom: 40px;
+    margin-bottom: var(--gap);
     .mainTitle {
       font-size: 32px;
     }

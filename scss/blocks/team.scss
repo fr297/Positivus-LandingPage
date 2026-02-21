@@ -4,95 +4,95 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: var(--gap);
     list-style-type: none;
     justify-content: center;
-    .teamItem {
-      width: 31%;
-      border-radius: 45px;
-      background-color: #191a23;
-      padding: 0 0 4px 0;
-      opacity: 0;
+  }
+  .teamItem {
+    width: 31%;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    padding: 0 0 4px 0;
+    opacity: 0;
+    .teamItemWrapper {
+      border-radius: var(--border-radius);
+      background-color: white;
+      padding: var(--gap) 35px;
+      border: 1px solid var(--secondary-color);
+      transition: all 0.1s ease;
+      height: 100%;
+    }
+    .person {
+      position: relative;
+      display: flex;
+      gap: var(--space-2);
+      padding: 0 0 28px 0;
+      margin: 0 0 28px 0;
+      border-bottom: 1px solid var(--secondary-color);
+      align-items: flex-end;
+      .linkedin {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 50%;
+      }
+      img {
+        width: 105px;
+        height: 102px;
+      }
+      .personName {
+        font-size: var(--space-2);
+        font-weight: 500;
+        line-height: 140%;
+      }
+      p {
+        font-size: var(--font-size);
+        font-weight: 400;
+      }
+    }
+    .personInfo {
+      font-size: var(--font-size);
+      font-weight: 400;
+      line-height: 140%;
+    }
+    &:hover {
       .teamItemWrapper {
-        border-radius: 45px;
-        background-color: white;
-        padding: 40px 35px;
-        border: 1px solid #191a23;
-        transition: all 0.1s ease;
-        height: 100%;
-        .person {
-          position: relative;
-          display: flex;
-          gap: 20px;
-          padding: 0 0 28px 0;
-          margin: 0 0 28px 0;
-          border-bottom: 1px solid #191a23;
-          align-items: flex-end;
-          .linkedin {
-            display: flex;
-            position: absolute;
-            right: 0;
-            top: 0;
-            border-radius: 50%;
-          }
-          img {
-            width: 105px;
-            height: 102px;
-          }
-          .personName {
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 140%;
-          }
-          p {
-            font-size: 18px;
-            font-weight: 400;
-          }
-        }
-        .personInfo {
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 140%;
+        background-color: var(--secondary-color);
+      }
+      .person {
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+        .linkedin {
+          border: 1px solid var(--primary-color);
         }
       }
-      &:hover {
-        .teamItemWrapper {
-          background-color: #191a23;
-          .person {
-            color: #b9ff66;
-            border-bottom: 1px solid #b9ff66;
-            .linkedin {
-              border: 1px solid #b9ff66;
-            }
-          }
-          .personInfo {
-            color: #b9ff66;
-          }
-        }
+      .personInfo {
+        color: var(--primary-color);
       }
-      &.animated {
-        opacity: 1;
-        animation: wobble-hor-bottom 0.9s ease;
-      }
+    }
+    &.animated {
+      opacity: 1;
+      animation: wobble-hor-bottom 0.9s ease;
     }
   }
   .teamBtnWrapper {
-    padding: 40px 0 0 0;
+    padding: var(--gap) 0 0 0;
     width: 100%;
     height: max-content;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     .teamCtaBtn {
-      padding: 20px 76px;
+      padding: var(--space-2) 76px;
       transition: all 0.2s ease-in-out;
       top: 0;
       &:hover {
-        background-color: #b9ff66;
+        background-color: var(--primary-color);
       }
       &:active {
-        background-color: #191a23;
-        color: #191a23;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
         transform: scale(0.95);
       }
     }
@@ -101,30 +101,24 @@
 
 @media (max-width: 1320px) {
   .team {
-    .teamList {
-      .teamItem {
-        width: 48%;
-      }
+    .teamItem {
+      width: 48%;
     }
   }
 }
 
 @media (max-width: 1155px) {
   .team {
-    .teamList {
-      .teamItem {
-        width: 60%;
-      }
+    .teamItem {
+      width: 60%;
     }
   }
 }
 
 @media (max-width: 950px) {
   .team {
-    .teamList {
-      .teamItem {
-        width: 75%;
-      }
+    .teamItem {
+      width: 75%;
     }
   }
 }
@@ -139,12 +133,10 @@
 
 @media (max-width: 500px) {
   .team {
-    .teamList {
-      .teamItem {
-        width: 100%;
-        .teamItemWrapper {
-          padding: 30px 20px;
-        }
+    .teamItem {
+      width: 100%;
+      .teamItemWrapper {
+        padding: var(--space-3) var(--space-2);
       }
     }
   }

@@ -7,8 +7,8 @@
       position: relative;
       width: 100%;
       padding: 60px 135px 120px 60px;
-      background-color: #f3f3f3;
-      border-radius: 45px;
+      background-color: var(--third-color);
+      border-radius: var(--border-radius);
     }
     .ctaImg {
       position: absolute;
@@ -16,13 +16,13 @@
       top: -20px;
     }
     .ctaTitle {
-      font-size: 30px;
+      font-size: var(--space-3);
       font-weight: 500;
       margin-bottom: 26px;
       opacity: 0;
     }
     .ctaSubtitle {
-      font-size: 18px;
+      font-size: var(--font-size);
       font-weight: 400;
       margin-bottom: 26px;
       line-height: 22px;
@@ -30,7 +30,7 @@
       opacity: 0;
     }
     .ctaBtn {
-      padding: 20px 35px;
+      padding: var(--space-2) 35px;
       opacity: 0;
     }
   }
@@ -48,7 +48,7 @@
   .callToAction {
     .ctaWrapper {
       .ctaImg {
-        right: 30px;
+        right: var(--space-3);
       }
     }
   }
@@ -69,7 +69,7 @@
         width: 100%;
       }
       .ctaBtn {
-        padding: 20px 50px;
+        padding: var(--space-2) 50px;
       }
     }
   }
@@ -82,7 +82,7 @@
         padding: 50px 50px 110px 50px;
       }
       .ctaBtn {
-        padding: 20px 10px;
+        padding: var(--space-2) 10px;
         font-size: 17px;
       }
     }

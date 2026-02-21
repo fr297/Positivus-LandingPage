@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     burger.classList.toggle("is-active");
     info.classList.toggle("slide-bottom");
     burgerBtn.classList.toggle("closeBtn");
-    document.body.classList.toggle("no-scroll");
+    document.body.classList.toggle("noScroll");
   });
 
   item.forEach((item) => {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       burger.classList.toggle("is-active");
       info.classList.toggle("slide-bottom");
       burgerBtn.classList.toggle("closeBtn");
-      document.body.classList.toggle("no-scroll");
+      document.body.classList.toggle("noScroll");
     });
   });
 
@@ -28,6 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
     burger.classList.toggle("is-active");
     info.classList.toggle("slide-bottom");
     burgerBtn.classList.toggle("closeBtn");
-    document.body.classList.toggle("no-scroll");
+    document.body.classList.toggle("noScroll");
   });
 });

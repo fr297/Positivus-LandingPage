@@ -1,5 +1,5 @@
 .partners {
-  padding: 35px 0 70px 0;
+  padding: var(--space-3) 0 var(--space-3) 0;
   overflow: hidden;
   .partnersWrapper {
     display: flex;
@@ -24,27 +24,27 @@
 
 @media (max-width: 1435px) {
   .partners {
-    padding: 70px 0;
+    padding: var(--space-3) 0;
   }
 }
 
 @media (max-width: 800px) {
   .partners {
     .partnersWrapper {
-      gap: 70px;
+      gap: var(--space-3);
     }
   }
 }
 
 @media (max-width: 775px) {
   .partners {
-    padding: 25px 0 70px 0;
+    padding: var(--space-2) 0 var(--space-3) 0;
   }
 }
 
 @media (max-width: 570px) {
   .partners {
-    padding: 35px 0;
+    padding: var(--space-3) 0;
     .partnersWrapper {
       gap: 55px;
     }

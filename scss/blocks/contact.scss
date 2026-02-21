@@ -2,8 +2,8 @@
   padding: 70px 0;
   .formWrapper {
     width: 100%;
-    background-color: #f3f3f3;
-    border-radius: 45px;
+    background-color: var(--third-color);
+    border-radius: var(--border-radius);
     padding: 60px 0 80px 100px;
     background-image: image-set(
       url(../img/contactBg.webp) 1x,
@@ -12,114 +12,114 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: 155%;
-    opacity: 0;
     transition: all 0.5s ease;
-    #form {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 50%;
-      .checkbox {
-        display: flex;
-        gap: 35px;
-        margin-bottom: 40px;
-        .topic {
-          font-size: 18px;
-          font-weight: 400;
-          display: inline-flex;
-          align-items: center;
-          gap: 14px;
-          cursor: pointer;
-          transition: all 0.4s ease;
-          .check {
-            position: absolute;
-            opacity: 0;
-          }
-          .checkbox-custom {
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            border: 1px solid #191a23;
-            position: relative;
-            &::after {
-              content: "";
-              width: 16px;
-              height: 16px;
-              background-color: #b9ff66;
-              border-radius: 50%;
-              opacity: 0;
-              position: absolute;
-              top: 5px;
-              right: 5px;
-            }
-          }
-          .check:checked + .checkbox-custom {
-            &::after {
-              opacity: 1;
-            }
-          }
-          &:hover,
-          &:focus {
-            transform: scale(1.07);
-          }
-        }
-      }
-      .contactInfo {
-        font-size: 16px;
-        font-weight: 400;
-        margin: 0 0 10px 0;
-      }
-      .input-field {
-        border-radius: 14px;
-        padding: 18px 30px;
-        border: 1px solid #191a23;
-        margin: 0 0 25px 0;
-        transition: all 0.3s ease;
-        &:focus {
-          border: 2px solid #191a23;
-          outline: none;
-        }
-      }
-      .message {
-        height: 190px;
-        resize: none;
-        transition: all 0.3s ease;
-        margin: 0 0 25px 0;
-        &:focus {
-          outline: none;
-          border: 2px solid #191a23;
-        }
-      }
-      .submitBtn {
-        width: 100%;
-        padding: 20px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #191a23;
-        border: 2px solid #191a23;
-        color: white;
-        font-size: 20px;
-        font-weight: 400;
-        cursor: pointer;
-        border-radius: 14px;
-        transition: all 0.3s ease;
-        margin-top: 15px;
-        &:hover,
-        &:focus {
-          background-color: #b9ff66;
-          color: #191a23;
-        }
-        &:active {
-          background-color: #191a23;
-          color: #191a23;
-          transform: scale(0.95);
-        }
-      }
-    }
+    opacity: 0;
     &.animated {
       opacity: 1;
+    }
+  }
+  #form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    .contactInfo {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0 0 10px 0;
+    }
+    .input-field {
+      border-radius: var(--space-1);
+      padding: 18px var(--space-3);
+      border: 1px solid var(--secondary-color);
+      margin: 0 0 25px 0;
+      transition: all 0.3s ease;
+      &:focus {
+        border: 2px solid var(--secondary-color);
+        outline: none;
+      }
+    }
+    .message {
+      height: 190px;
+      resize: none;
+      transition: all 0.3s ease;
+      margin: 0 0 25px 0;
+      &:focus {
+        outline: none;
+        border: 2px solid var(--secondary-color);
+      }
+    }
+    .submitBtn {
+      width: 100%;
+      padding: var(--space-2) 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--secondary-color);
+      border: 2px solid var(--secondary-color);
+      color: white;
+      font-size: var(--space-2);
+      font-weight: 400;
+      cursor: pointer;
+      border-radius: var(--space-1);
+      transition: all 0.3s ease;
+      margin-top: 15px;
+      &:hover,
+      &:focus {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+      }
+      &:active {
+        background-color: var(--secondary-color);
+        color: var(--secondary-color);
+        transform: scale(0.95);
+      }
+    }
+  }
+  .checkbox {
+    display: flex;
+    gap: 35px;
+    margin-bottom: var(--gap);
+    .topic {
+      font-size: var(--font-size);
+      font-weight: 400;
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-1);
+      cursor: pointer;
+      transition: all 0.4s ease;
+      .check {
+        position: absolute;
+        opacity: 0;
+      }
+      .checkbox-custom {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 1px solid var(--secondary-color);
+        position: relative;
+        &::after {
+          content: "";
+          width: 16px;
+          height: 16px;
+          background-color: var(--primary-color);
+          border-radius: 50%;
+          opacity: 0;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+        }
+      }
+      .check:checked + .checkbox-custom {
+        &::after {
+          opacity: 1;
+        }
+      }
+      &:hover,
+      &:focus {
+        transform: scale(1.07);
+      }
     }
   }
 }
@@ -161,16 +161,16 @@
     .formWrapper {
       padding: 60px 100px 80px 100px;
       background-image: none;
-      #form {
-        width: 100%;
-      }
+    }
+    #form {
+      width: 100%;
     }
   }
 }
 
 @media (max-width: 900px) {
   .contact {
-    padding: 40px 0 30px 0;
+    padding: var(--gap) 0 var(--space-3) 0;
     .about {
       .contactSubtitle {
         width: 100%;
@@ -182,7 +182,7 @@
 @media (max-width: 800px) {
   .contact {
     .formWrapper {
-      padding: 60px 40px;
+      padding: 60px var(--gap);
     }
   }
 }
@@ -190,21 +190,17 @@
 @media (max-width: 480px) {
   .contact {
     .formWrapper {
-      padding: 40px 20px;
+      padding: var(--gap) var(--space-2);
     }
   }
 }
 
 @media (max-width: 360px) {
   .contact {
-    .formWrapper {
-      #form {
-        .checkbox {
-          gap: 25px;
-          .topic {
-            font-size: 16px;
-          }
-        }
+    .checkbox {
+      gap: 25px;
+      .topic {
+        font-size: 16px;
       }
     }
   }
