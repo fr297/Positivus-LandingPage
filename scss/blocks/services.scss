@@ -1,10 +1,11 @@
+@use "../mixins" as mixins;
+
 .services {
   padding: 70px 0 50px 0;
   .servicesList {
-    display: flex;
+    @include mixins.flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     list-style-type: none;
     gap: var(--gap);
   }
@@ -12,16 +13,13 @@
     position: relative;
     width: 48%;
     padding: 0 0 4px;
-    border-radius: var(--border-radius);
     transition: all 0.4s ease;
     background-color: var(--secondary-color);
     opacity: 0;
     .servicesItemWrapper {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: 1px solid #191a23;
+      @include mixins.flex;
+      border: 1px solid var(--secondary-color);
       border-radius: var(--border-radius);
       padding: 50px;
     }

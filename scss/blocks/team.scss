@@ -1,3 +1,5 @@
+@use "../mixins" as mixins;
+
 .team {
   padding: 70px 0 50px 0;
   .teamList {
@@ -10,7 +12,6 @@
   }
   .teamItem {
     width: 31%;
-    border-radius: var(--border-radius);
     background-color: var(--secondary-color);
     padding: 0 0 4px 0;
     opacity: 0;
@@ -80,8 +81,7 @@
     padding: var(--gap) 0 0 0;
     width: 100%;
     height: max-content;
-    display: flex;
-    align-items: center;
+    @include mixins.flex;
     justify-content: flex-end;
     .teamCtaBtn {
       padding: var(--space-2) 76px;

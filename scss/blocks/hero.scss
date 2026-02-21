@@ -1,8 +1,9 @@
+@use "../mixins" as mixins;
+
 .hero {
   padding: 198px 0 var(--space-3) 0;
   .heroWrapper {
-    display: flex;
-    justify-content: space-between;
+    @include mixins.flex;
     .heroImage {
       width: 600px;
       height: auto;

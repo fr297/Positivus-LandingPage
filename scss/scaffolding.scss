@@ -124,6 +124,11 @@ body {
   }
 }
 
+.card {
+  border-radius: var(--border-radius);
+  transition: all 0.6s ease;
+}
+
 .logo {
   display: flex;
   gap: 12px;

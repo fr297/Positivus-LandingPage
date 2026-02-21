@@ -1,3 +1,5 @@
+@use "../mixins" as mixins;
+
 .testimonials {
   padding: 70px 0;
   #testSlider {
@@ -62,14 +64,11 @@
       }
     }
     .arrowWrapper {
-      display: flex;
+      @include mixins.flex;
       justify-content: center;
-      align-items: center;
       .splide__arrows {
         width: 60%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include mixins.flex;
         padding: 124px 0 0 0;
         gap: 189px;
 
@@ -84,7 +83,7 @@
       position: absolute;
       bottom: 68px;
       left: 44%;
-      display: flex;
+      @include mixins.flex;
       justify-content: center;
       gap: 19px;
       .splide__pagination__page {
