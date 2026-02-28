@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "optimize:svg": "svgo img/sprite.svg -o img/sprite.svg"
   },
   "devDependencies": {
     "css-loader": "^7.1.2",
@@ -16,6 +17,7 @@
     "sass": "^1.97.3",
     "sass-loader": "^16.0.6",
     "style-loader": "^4.0.0",
+    "svgo": "^4.0.0",
     "webpack": "^5.104.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
