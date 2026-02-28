@@ -2,6 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
+const globAll = require("glob-all");
 
 module.exports = {
   mode: "development",
@@ -56,7 +58,30 @@ module.exports = {
       favicon: "./favicon.ico",
     }),
     new MiniCssExtractPlugin({
-      filename: "css/[name].css", // итоговый CSS в dist/css/
+      filename: "css/[name].css",
+    }),
+    new PurgeCSSPlugin({
+      paths: globAll.sync([
+        path.join(__dirname, "index.html"),
+        path.join(__dirname, "js/**/*.js"),
+      ]),
+      safelist: {
+        standard: [
+          /^splide/,
+          /^splide__/,
+          /^splide__pagination/,
+          /^splide__arrow/,
+          /^splide__track/,
+          /^splide__list/,
+          /^splide__slide/,
+          /^is-active$/,
+          /^noScroll$/,
+          /^slide-bottom$/,
+          /^closeBtn$/,
+        ],
+        deep: [/^splide/],
+        greedy: [/splide/],
+      },
     }),
     new CopyPlugin({
       patterns: [{ from: path.resolve(__dirname, "img"), to: "img" }],
